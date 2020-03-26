@@ -1,12 +1,9 @@
 
+
 body {
     background-color: #eee;
     color: #333;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.625;
     margin: 0;
 }
 
@@ -16,29 +13,134 @@ body {
     margin-right: auto;
     max-width: 1280px;
 }
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
 .site-header {
-    background-color: #fff;
-    border-bottom: 1px solid #eee;
-    max-width: 1280px;
-    min-height: 77px;
-    padding: 20px 40px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	max-width: 1280px;
+	min-height: 77px;
+	position: fixed;
+	top: 0;	
+	width: 100%;
+	z-index: 999;
+}
+
+.admin-bar .site-header {
+	top: 32px;
+}
+
+/* Site Title and Description
+--------------------------------------------- */
+
+.title-area {
+	float: left;
+	margin-top: 8px;
 }
 
 .site-title {
-    font-size: 20px;
-    font-size: 2rem;
+	font-size: 20px;
     font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1;
-    margin-bottom: 0;
-    text-transform: uppercase;
+    margin:20px;
+	text-transform: uppercase;
 }
 
-.title-area {
-    float: left;
-    margin-top: 8px;
+.site-title a,
+.site-title a:hover,
+.site-title a:focus {
+	color: #333;
+}
+
+
+.site-description {
+	display: block;
+	height: 0;
+	margin-bottom: 0;
+	text-indent: -9999px;
+}
+
+
+.site-inner {
+	clear: both;
+	margin-top: 77px;
+}
+
+.front-page-1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.jumbotron{
+    background-color: black;
+    color: white;
+    margin:20px;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+/* Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+	word-wrap: break-word;
+}
+
+.widget ol > li {
+	list-style-position: inside;
+	list-style-type: decimal;
+	padding-left: 20px;
+	text-indent: -20px;
+}
+
+.widget li li {
+	border: 0;
+	margin: 0 0 0 30px;
+	padding: 0;
+}
+
+.widget_calendar table {
+	width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+	text-align: center;
+}
+
+
+/* Flexible Widgets
+--------------------------------------------- */
+
+.flexible-widgets .widget {
+	float: left;
+	margin-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.flexible-widgets.widget-full .widget,
+.flexible-widgets.widget-area .widget:nth-of-type(1),
+.flexible-widgets.widget-halves.uneven .widget:last-of-type {
+	width: 100%;
+}
+
+.flexible-widgets.widget-fourths .widget {
+	width: 25%;
+}
+
+.flexible-widgets.widget-halves .widget {
+	width: 50%;
+}
+
+.flexible-widgets.widget-thirds .widget {
+	width: 33.33%;
+}
+
+.flexible-widgets.widget-halves .widget:nth-child(even),
+.flexible-widgets.widget-thirds .widget:nth-child(3n+2),
+.flexible-widgets.widget-fourths .widget:nth-child(4n+2) {
+    clear: left;
 }
